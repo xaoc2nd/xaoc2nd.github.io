@@ -1,0 +1,27 @@
+[
+    {
+      "id": "0",
+      "maxMembers": 4,
+      "leaderId": "auth0|3",
+      "category": "RX",
+      "format": "HHF",
+      "teamName": "Le ninja et ses warriors",
+      "teamProfilePicURL": "lib/0_data/images/team.PNG",
+      "competitionId": 0,
+      "competitionName": "West Coast Throwdown",
+      "competitionDate": "01/07/2024",
+      "notifications": 5
+    },
+    {
+      "id": "1",
+      "maxMembers": 3,
+      "leaderId": "auth0|1",
+      "format": "HHH",
+      "teamName": "Les fortiches",
+      "teamProfilePicURL": "lib/0_data/images/team.PNG",
+      "competitionId": 1,
+      "competitionName": "Affiliate Battles",
+      "competitionDate": "01/10/2024",
+      "notifications": 3
+    }
+]
