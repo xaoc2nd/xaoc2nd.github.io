@@ -1,0 +1,14 @@
+[
+    {
+      "name": "haltero",
+      "description": "This athlete has good weightlifting skills"
+    },
+    {
+      "name": "experience",
+      "description": "This athlete participated in alot of competitions"
+    },
+    {
+      "name": "top 1%",
+      "description": "This athlete is top 1% in our leaderboard"
+    }
+]

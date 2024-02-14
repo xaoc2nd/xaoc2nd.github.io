@@ -1,0 +1,14 @@
+[
+    {
+      "name": "Gym",
+      "description": "This athlete has good Gym skills"
+    },
+    {
+      "name": "experience",
+      "description": "This athlete participated in alot of competitions"
+    },
+    {
+      "name": "top 10%",
+      "description": "This athlete is top 10% in our leaderboard"
+    }
+]
