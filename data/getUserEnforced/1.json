@@ -1,0 +1,16 @@
+{
+    "id": "auth0|1",
+    "username": "user1",
+    "email": "user1@example.com",
+    "fullname": "John Doe",
+    "profilePictureUrl": "",
+    "location": "New York",
+    "gender": "M",
+    "height": 180,
+    "weight": 75,
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/user1",
+      "twitter": "https://twitter.com/user1"
+    },
+    "notificationMessages": 2
+  }
