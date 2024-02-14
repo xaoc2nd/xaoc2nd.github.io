@@ -1,0 +1,11 @@
+[
+    {
+      "name": "gym",
+      "description": "This athlete needs to train gym"
+    },
+    {
+      "name": "cardio",
+      "description": "This athlete needs to train cardio"
+    }
+
+]

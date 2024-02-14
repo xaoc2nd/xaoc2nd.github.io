@@ -1,0 +1,15 @@
+[
+    {
+      "name": "haltero",
+      "description": "This athlete needs to train haltero"
+    },
+    {
+      "name": "experience",
+      "description": "This athlete participated in few  competitions"
+    },
+    {
+        "name": "admin",
+        "description": "This athlete is creator of the application"
+      }
+
+]
