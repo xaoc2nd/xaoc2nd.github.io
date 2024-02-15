@@ -3,7 +3,7 @@
     "username": "user2",
     "email": "user2@example.com",
     "fullname": "Jane Smith",
-    "profilePictureUrl": "https://example.com/user2.jpg",
+    "profilePictureUrl": "https://cdn.pixabay.com/photo/2014/04/03/10/32/user-310807_1280.png",
     "location": "Los Angeles",
     "gender": "F",
     "height": 165,
