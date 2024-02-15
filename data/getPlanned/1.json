@@ -1,0 +1,44 @@
+[
+    {
+      "id": "1",
+      "maxMembers": 5,
+      "leaderId": "auth0|1",
+      "category": "Elite",
+      "format": "HHHFF",
+      "teamName": "Planned User 1",
+      "memberCount": 3,
+      "competitionId": 1,
+      "competitionName": "aaaa",
+      "teamProfilePicURL": "url1",
+      "competitionDate": "2023-02-05",
+      "notifications": 2
+    },
+    {
+        "id": "1",
+        "maxMembers": 5,
+        "leaderId": "auth0|1",
+        "category": "Elite",
+        "format": "HHHFF",
+        "teamName": "Planned User 1",
+        "memberCount": 3,
+        "competitionId": 1,
+        "competitionName": "bbbbbbb",
+        "teamProfilePicURL": "url1",
+        "competitionDate": "2023-02-05",
+        "notifications": 2
+    },
+    {
+        "id": "1",
+        "maxMembers": 5,
+        "leaderId": "auth0|1",
+        "category": "Elite",
+        "format": "HHHFF",
+        "teamName": "Planned User 1",
+        "memberCount": 3,
+        "competitionId": 1,
+        "competitionName": "ccccccc",
+        "teamProfilePicURL": "url1",
+        "competitionDate": "2023-02-05",
+        "notifications": 2
+    }
+  ]
