@@ -16,19 +16,15 @@
       "notificationMessages": 2
     },
     {
-      "id": "auth0|2",
-      "username": "user2",
-      "email": "user2@example.com",
-      "fullname": "Jane Smith",
-      "profilePictureUrl": "https://example.com/user2.jpg",
-      "location": "Los Angeles",
-      "gender": "F",
-      "height": 165,
-      "weight": 60,
-      "socialMediaLinks": {
-        "instagram": "https://www.instagram.com/user2",
-        "twitter": "https://twitter.com/user2"
-      },
-      "notificationMessages": 1
+      "id": "auth0|3",
+      "username": "xaoc2nd",
+      "email": "mathieuguery76@gmail.com",
+      "fullname": "Mathieu GUERY",
+      "profilePictureUrl": "https://s.gravatar.com/avatar/7f7f8e9ec5753e21b557091018e39a4e?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fma.png",
+      "gender": "M",
+      "notificationMessages": 7,
+      "height": 183,
+      "weight": 90
+  
     }
   ]
