@@ -1,6 +1,7 @@
 import os
 import requests
 import json
+from datetime import datetime
 
 def make_api_call(url, params=None):
     try:
@@ -25,6 +26,9 @@ def get_event_data(event_id):
     return data
 
 def main():
+    # Get today's date
+    today_date = datetime.now().strftime('%d/%m/%Y')
+
     # Get existing competitions data
     file_path = "data/getCompetitions/competitions.json"
     try:
@@ -45,18 +49,37 @@ def main():
 
     # Process leaderboard data and append to competitions
     for item in leaderboard_data:
+        event_date_str = item['date']['start']['day']
+        # Convert event_date to datetime object
+        try:
+            event_date_obj = datetime.strptime(event_date_str, '%d/%m/%Y')
+        except ValueError:
+            # If the date format is not 'DD/MM/YYYY', try 'YYYY-MM-DD'
+            event_date_obj = datetime.strptime(event_date_str, '%Y-%m-%d')
+
+        if event_date_obj <= datetime.now():
+            # If the event date is not after today's date, skip this competition
+            continue
+
         competition = {
-            'id': item['_id'],
-            'date': item['date']['start']['day'],
+            'id': item['eventNumber'],  # Use 'eventNumber' field for id
+            'date': event_date_str,
             'name': item['name'],
-            'competitionPicture': item.get('iconLink')  # Set to None if 'iconLink' is missing
+            'competitionPicture': item.get('iconLink'),  # Set to None if 'iconLink' is missing
         }
         
-        # Fetch event data and add leaderboard divisions to the competition format field
-        event_data = get_event_data(item['_id'])
-        if event_data and 'divisions' in event_data:
-            divisions_names = [division['name'] for division in event_data['divisions']]
-            competition['format'] = divisions_names
+        # Fetch event data and add location and formats to the competition
+        event_data = get_event_data(item['eventNumber'])  # Use 'eventNumber' as event_id
+        if event_data and 'presentation' in event_data:
+            presentation_data = event_data['presentation']
+            if 'location' in presentation_data:
+                competition['location'] = presentation_data['location']
+        if event_data and 'leaderboard' in event_data:
+            leaderboard_competition_data = event_data['leaderboard']
+            if 'divisions' in leaderboard_competition_data:
+                divisions = leaderboard_competition_data['divisions']
+                formats = [division['name'] for division in divisions]
+                competition['formats'] = formats
 
         # Append competition to competitions list
         competitions.append(competition)
