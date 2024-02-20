@@ -3,7 +3,17 @@ import time
 import requests
 import json
 
-def make_api_call(timestamp, page):
+def make_api_call(url, params=None):
+    try:
+        response = requests.get(url, params=params)
+        response.raise_for_status()
+        data = response.json()
+        return data
+    except requests.exceptions.RequestException as e:
+        print(f"Error making API call: {e}")
+        return None
+
+def get_competitions(timestamp):
     url = 'https://competitioncorner.net/api2/v1/events/filtered'
     params = {
         'timing': 'active',
@@ -11,51 +21,68 @@ def make_api_call(timestamp, page):
         'format': 'team',
         'type': 'functional_fitness',
         'countryIds': [73, 40, 6, 19],  # List of country IDs
-        'page': page,
+        'page': 1,
         'perPage': 10
     }
 
+    competitions = []
+
     try:
-        response = requests.get(url, params=params)
-        response.raise_for_status()
-        data = response.json()
-        filtered_data=[]
-        for event in data:
-            filtered_event = {
-                'id': event['id'],
-                'name': event['name'],
-                'locationTitle': event['locationTitle'],
-                'startDateTime': event['startDateTime']
-            }
-            filtered_data.append(filtered_event)
-        return filtered_data
-    except requests.exceptions.RequestException as e:
-        print(f"Error making API call: {e}")
-        return None
+        while True:
+            response = make_api_call(url, params=params)
+            if not response:
+                print("API call failed or returned empty JSON.")
+                break
+            
+            if not response:
+                print("API returned empty JSON. Terminating loop.")
+                break
+            
+            for event in response:
+                competition = {
+                    'id': event['id'],
+                    'name': event['name'],
+                    'locationTitle': event['locationTitle'],
+                    'startDateTime': event['startDateTime']
+                }
+                competitions.append(competition)
+                
+            params['page'] += 1
+    except KeyboardInterrupt:
+        print("Keyboard interrupt received. Terminating.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+    return competitions
+
+def get_competition_picture(event_id):
+    url = f'https://competitioncorner.net/api2/v1/registrationinfo/event/{event_id}/divisions'
+    response = make_api_call(url)
+    if response and 'visualSettings' in response and 'logoImage' in response['visualSettings']:
+        return response['visualSettings']['logoImage']
+    return None
 
 def main():
     timestamp = int(time.time() * 1000)  # Replace this with your actual timestamp
-    page = 1
-    all_results = []
-    while True:
-        result = make_api_call(timestamp, page)
-        
-        if not result:  # If API call fails or returns empty JSON
-            print("API call failed or returned empty JSON.")
-            break
-        
-        if not result:  # If API returns an empty JSON array
-            print("API returned empty JSON. Terminating loop.")
-            break
-        all_results.extend(result)  # Append current page results to the list
-        page += 1  # Increment page number for the next iteration
-    json_result = json.dumps(all_results)
-    file_path = "data/getCompetitions/competitions.json"
-    os.makedirs(os.path.dirname(file_path), exist_ok=True)
-    with open(file_path, 'w') as f:
-        f.write(json_result)
-    print("Data saved to:", file_path)
+    competitions = get_competitions(timestamp)
 
+    if competitions:
+        for competition in competitions:
+            competition['competitionPicture'] = get_competition_picture(competition['id'])
+
+        # Define the file path
+        file_path = "data/getCompetitions/competitions.json"
+
+        # Create the directory if it doesn't exist
+        os.makedirs(os.path.dirname(file_path), exist_ok=True)
+
+        # Write the JSON data to the file with indentation for readability
+        with open(file_path, 'w') as f:
+            json.dump(competitions, f, indent=4)
+
+        print("Data saved to:", file_path)
+    else:
+        print("No competitions found.")
 
 if __name__ == "__main__":
     main()
