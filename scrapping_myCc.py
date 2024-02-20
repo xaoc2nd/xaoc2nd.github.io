@@ -42,8 +42,8 @@ def get_competitions(timestamp):
                 competition = {
                     'id': event['id'],
                     'name': event['name'],
-                    'locationTitle': event['locationTitle'],
-                    'startDateTime': event['startDateTime']
+                    'location': event['locationTitle'],
+                    'date': event['startDateTime']
                 }
                 competitions.append(competition)
                 
