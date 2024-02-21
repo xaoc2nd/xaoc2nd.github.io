@@ -19,7 +19,7 @@ def get_competitions(timestamp):
         'timing': 'active',
         'timestamp': timestamp,
         'format': 'team',
-        'type': 'functional_fitness',
+        'type': 'functional_fitness;online',
         'countryIds': [73, 40, 6, 19],  # List of country IDs
         'page': 1,
         'perPage': 10

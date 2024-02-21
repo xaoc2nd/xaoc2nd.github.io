@@ -1,10 +1,38 @@
 [
     {
+        "id": 11803,
+        "name": "The 2024 Belgium Showdown HYBRID Placement, an Official 2024 CrossFit\u00ae Licensed Event",
+        "location": "Oost-Vlaanderen, Belgium",
+        "date": "2024-02-23T10:00:00",
+        "competitionPicture": "https://competitioncorner.net/file.aspx/mainFilesystem?Events%2Fad3vd4o58.jpeg"
+    },
+    {
+        "id": 12421,
+        "name": "Alsace Throwdown QUALIFIERS  2024",
+        "location": "Haut Rhin, France",
+        "date": "2024-03-01T08:00:00",
+        "competitionPicture": "https://competitioncorner.net/file.aspx/mainFilesystem?Events%2Fbhrs91hpx.png"
+    },
+    {
         "id": 12361,
         "name": "BURGER & BURPEES BATTLE 10 Mars 2024",
         "location": "Laval, Pays de la loire, France",
         "date": "2024-03-10T07:00:00",
         "competitionPicture": "https://competitioncorner.net/file.aspx/mainFilesystem?Events%2Fyl3csnyhq.png"
+    },
+    {
+        "id": 12456,
+        "name": "UNICORN THROWDOWN 2024 - QUALIFICATIONS",
+        "location": "Amiens, Somme, France",
+        "date": "2024-03-20T11:00:00",
+        "competitionPicture": "https://competitioncorner.net/file.aspx/mainFilesystem?Events%2Fmod1xy2qb.jpeg"
+    },
+    {
+        "id": 12109,
+        "name": "French Throwdown 2024 Online Qualifiers",
+        "location": "D\u00e9cines-charpieu, Rh\u00f4ne, France",
+        "date": "2024-03-22T20:00:00",
+        "competitionPicture": "https://competitioncorner.net/file.aspx/mainFilesystem?Events%2F2wfg0juah.jpg"
     },
     {
         "id": 12262,
@@ -19,6 +47,13 @@
         "location": "Mondeville, NORMANDIE, France",
         "date": "2024-03-24T20:00:00",
         "competitionPicture": "https://competitioncorner.net/file.aspx/mainFilesystem?Events%2Fom9geon4r.jpg"
+    },
+    {
+        "id": 12375,
+        "name": "Beach and Barbells Contest (Qualifier)",
+        "location": "Neuch\u00e2tel, NE, Switzerland",
+        "date": "2024-03-25T00:01:00",
+        "competitionPicture": "https://competitioncorner.net/file.aspx/mainFilesystem?Events%2Fiuf08abqj.png"
     },
     {
         "id": 12380,
@@ -49,6 +84,13 @@
         "competitionPicture": "https://competitioncorner.net/file.aspx/mainFilesystem?Events%2Fkjogux1we.png%26thumbnail%3D150%2C150"
     },
     {
+        "id": 12083,
+        "name": "Golden Contest 2024 Online Qualifiers",
+        "location": "Fribourg, Switzerland",
+        "date": "2024-04-01T00:00:00",
+        "competitionPicture": "https://competitioncorner.net/file.aspx/mainFilesystem?Events%2Fz45hi8pbc.png"
+    },
+    {
         "id": 12054,
         "name": "YourProgress Throwdown",
         "location": "Vaison-la-romaine, Vaucluse, France",
@@ -77,6 +119,13 @@
         "competitionPicture": "https://competitioncorner.net/file.aspx/mainFilesystem?Events%2Fefqdblo0e.png%26thumbnail%3D150%2C150"
     },
     {
+        "id": 11914,
+        "name": "Affiliates Battle 2024 - QUALIF -",
+        "location": "Nimes, GARD, France",
+        "date": "2024-04-13T20:00:00",
+        "competitionPicture": "https://competitioncorner.net/file.aspx/mainFilesystem?Events%2F5vkqb818c.jpg"
+    },
+    {
         "id": 12619,
         "name": "HandStand Throwdowns",
         "location": "Saint-malo, Bretagne, France",
@@ -91,11 +140,25 @@
         "competitionPicture": "https://competitioncorner.net/file.aspx/mainFilesystem?Events%2Fxuijei80b.JPEG"
     },
     {
+        "id": 12710,
+        "name": "WODATOLOSA XXL 2024",
+        "location": "Toulouse, Haute Garonne, France",
+        "date": "2024-04-20T08:00:00",
+        "competitionPicture": "https://competitioncorner.net/file.aspx/mainFilesystem?Events%2Fre9pwfthb.jpg"
+    },
+    {
         "id": 12796,
         "name": "CrossFit Des Ponts Spring Contest",
         "location": "Plan d'orgon, Bouches-du-Rh\u00f4ne, France",
         "date": "2024-04-21T08:00:00",
         "competitionPicture": "https://competitioncorner.net/file.aspx/mainFilesystem?Events%2Fh63vrt9qz.04.24.png"
+    },
+    {
+        "id": 11538,
+        "name": "LIEGE THROWDOWN 2024 | Qualifiers ",
+        "location": "Herstal, Liege, Belgium",
+        "date": "2024-04-26T10:00:00",
+        "competitionPicture": "https://competitioncorner.net/file.aspx/mainFilesystem?Events%2F1dnliyi47.png"
     },
     {
         "id": 12097,
@@ -112,11 +175,39 @@
         "competitionPicture": "https://competitioncorner.net/file.aspx/mainFilesystem?Events%2Fbn00rub5d.png"
     },
     {
+        "id": 12362,
+        "name": "Mayenne Throwdown 2024 QUALIFIER",
+        "location": "Pays de Loire, France",
+        "date": "2024-04-28T08:00:00",
+        "competitionPicture": "https://competitioncorner.net/file.aspx/mainFilesystem?Events%2Fsdle2fs9d.jpg"
+    },
+    {
         "id": 12853,
         "name": "UBK SUMMER CONTEST #2",
         "location": "Nemours, seine et marne, France",
         "date": "2024-04-28T09:00:00",
         "competitionPicture": "https://competitioncorner.net/file.aspx/mainFilesystem?Events%2Fgcebp9euy.png"
+    },
+    {
+        "id": 11767,
+        "name": "Border throwdown 2024 qualification ",
+        "location": "Bernissart, hainaut, Belgium",
+        "date": "2024-05-01T00:00:00",
+        "competitionPicture": "https://competitioncorner.net/file.aspx/mainFilesystem?Events%2Fqz13ypkyp.png"
+    },
+    {
+        "id": 12878,
+        "name": "Swiss Throwdown 2024",
+        "location": "lucerne, Switzerland",
+        "date": "2024-05-03T00:00:00",
+        "competitionPicture": "https://competitioncorner.net/file.aspx/mainFilesystem?Events%2Fftxf0udky.jpg"
+    },
+    {
+        "id": 11718,
+        "name": "BUFFELTHROWDOWN 2024 ONLINE QUALIFIERS POWERED BY GETHYDR8",
+        "location": "8531, Belgium",
+        "date": "2024-05-03T13:00:00",
+        "competitionPicture": "https://competitioncorner.net/file.aspx/mainFilesystem?Events%2Fj7oia1h71.png"
     },
     {
         "id": 12033,
@@ -145,6 +236,13 @@
         "location": "La croix valmer, Provence-Alpes-C\u00f4te d'Azur, France",
         "date": "2024-05-11T08:00:00",
         "competitionPicture": "https://competitioncorner.net/file.aspx/mainFilesystem?Events%2F13niwreix.png"
+    },
+    {
+        "id": 12511,
+        "name": "West Coast Throwdown 2024 Qualifications",
+        "location": "Landes, France",
+        "date": "2024-05-11T20:00:00",
+        "competitionPicture": "https://competitioncorner.net/file.aspx/mainFilesystem?Events%2Fwzc4g98sw.png"
     },
     {
         "id": 11990,
@@ -954,21 +1052,6 @@
         ]
     },
     {
-        "id": 1856,
-        "date": "11/05/2024",
-        "name": "RSR Finals",
-        "competitionPicture": "https://scoring-images.s3.eu-west-3.amazonaws.com/logo-65d2507287492500337850ff-65d25090874925003378513d-3.png",
-        "location": "1163 Etoy",
-        "formats": [
-            "Femmes 29 ans et moins",
-            "Femmes 30-39 ans",
-            "Femmes 40 ans et plus",
-            "Hommes 29 ans et moins",
-            "Hommes 30-39 ans",
-            "Hommes 40 ans et plus"
-        ]
-    },
-    {
         "id": 1812,
         "date": "11/03/2024",
         "name": "LA ROCHELLE CONTEST 2024 - QUALIFIER",
@@ -1274,6 +1357,16 @@
             "HF SCAL",
             "FF RX",
             "FF SCAL"
+        ]
+    },
+    {
+        "id": 1832,
+        "date": "01/06/2024",
+        "name": "Magic R\u00e9volution",
+        "competitionPicture": "https://scoring-images.s3.eu-west-3.amazonaws.com/logo-65c0c2cd54f9be0033f2f16c-65d3c808afa2220033b43550-Magic%20Cross%20Fit%20-%20Logo_2000px.jpg",
+        "location": "magic crossfit",
+        "formats": [
+            "hhf"
         ]
     },
     {
