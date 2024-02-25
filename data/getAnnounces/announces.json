@@ -1,0 +1,65 @@
+[
+    {
+        "id":"0",
+        "description":"je recherche une équipe en RX pour les West Coast en HHF",
+        
+        "userId": "auth0|1",
+
+    "fullname": "John Doe",
+    "profilePictureUrl": "https://www.tekoway.com/wp-content/uploads/2018/12/John-Doe.jpg",
+    "location": "New York",
+    "gender": "M",
+    "height": 180,
+    "weight": 75,
+    "competitionId":12511,
+    "competitionName":"West Coast Throwdown 2024 Qualifications",
+    "competitionLocation":"Landes, France",
+    "userBox":"Crossfit Pont Jumeaux",
+    "formats":["HHF"],
+    "categories":["Elite","RX"]
+
+
+    },
+    {
+        "id":"1",
+        "description":"je recherche une équipe en RX pour les MADEC BATTLEFIELD 2024 en HF",
+        
+        "userId": "auth0|1",
+
+    "fullname": "John Doe",
+    "profilePictureUrl": "https://www.tekoway.com/wp-content/uploads/2018/12/John-Doe.jpg",
+    "location": "New York",
+    "gender": "M",
+    "height": 180,
+    "weight": 75,
+    "competitionId":12445,
+    "competitionName":"MADEC BATTLEFIELD 2024",
+    "competitionLocation":"Bonnefamille, FRANCE, France",
+    "userBox":"Crossfit Pont Jumeaux",
+    "formats":["HF"],
+    "categories":["RX"]
+
+
+    },
+    {
+        "id":"2",
+        "description":"je recherche une équipe en RX pour les Affiliates Battle 2024 - QUALIF - en HHF",
+        
+        "userId": "auth0|2",
+
+    "fullname": "Jane Smith",
+    "profilePictureUrl": "https://cdn.pixabay.com/photo/2014/04/03/10/32/user-310807_1280.png",
+    "location": "Los Angeles",
+    "gender": "F",
+    "height": 165,
+    "weight": 60,
+    "competitionId":11914,
+    "competitionName":"Affiliates Battle 2024 - QUALIF -",
+    "competitionLocation":"Nimes, GARD, France",
+    "userBox":"Crossfit Rive Droite",
+    "formats":["HHF"],
+    "categories":["RX"]
+
+
+    }
+]
